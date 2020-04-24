@@ -2,7 +2,7 @@
 
 E-commerce dapp for farmers:
 Frontend:
-Web3js to connect between frontend and dapp
+Conseiljsjs to connect between frontend and dapp
 Farmer:
 Farmers should login if they haven’t(Id would be their blockchain address from metamask or similar to this)
 They should also give their personal details like address ph no.
