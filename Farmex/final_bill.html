@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Items | Farmex</title>
+        <style type ="text/css">
+        td, th, table
+        {
+            border: thin solid orange;
+        }
+        </style>
+    </head>
+
+    <body>
+        <form action ="https://localhost/Farmex/final_bill.php" method ="POST">
+            <h2> FARMEX - BUY AND SELL DIRECTLY</h2>
+
+            <table>
+                <tr>
+                    <td> Customer's name: </td>
+                    <td> <input type="text" name ="username" size="30"/></td>
+                </tr>
+
+                <tr>
+                    <td> Customer's hashcode: </td>
+                    <td> <input type="text" name ="userhash" size="35"/></td>
+                </tr>
+            </table>
+            </p>
+
+            <table>
+                <tr> 
+                    <th> Product</th>
+                    <th> Price </th>
+                    <th> Quantity </th>
+                </tr>
+
+                <tr>
+                    <td> Tomato (1kg) </td>
+                    <td> ₹45 </td>
+                    <td> <input type="number" name="tomato" size="3" /></td>
+                </tr>
+
+
+                <tr>
+                    <td> Potato (1kg) </td>
+                    <td> ₹35 </td>
+                    <td> <input type="number" name="potato" size="3" /></td>
+                </tr>
+
+                <tr>
+                    <td> Onion (1kg) </td>
+                    <td> ₹49 </td>
+                    <td> <input type="number" name="onion" size="3" /></td>
+                </tr>
+
+                <tr>
+                    <td> Cauliflower (1 piece) </td>
+                    <td> ₹40 </td>
+                    <td> <input type="number" name="cauliflower" size="3" /></td>
+                </tr>
+
+                <tr>
+                    <td> Cabbage (1 piece) </td>
+                    <td> ₹19 </td>
+                    <td> <input type="number" name="cabbage" size="3" /></td>
+                </tr>
+            </table>
+            </p>
+
+            <h3> Payment Method </h3>
+            <p>
+                <input type ="radio" name ="payment" value ="xtz" checked= "checked" /> Tezos (XTZ) <br/>
+
+                <input type="submit" value ="Submit Order"/>
+                <input type ="reset" value = "Clear Order"/>
+            </p>
+        </form>
+    </body>
+</html>
