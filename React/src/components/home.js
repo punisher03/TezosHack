@@ -7,12 +7,16 @@ export default class Home extends Component {
     return (
     <div class='index'>
        <div class='farmer'>
+         <h1>Farmer's Portal</h1>
+         <Link className="btn btn-primary" to={"/farmer/login" }>Login</Link>
+         <p> Don't have an account yet? Sign Up!</p>
        <Link to={"/farmer/signup" }>Signup</Link>
-       <Link to={"/farmer/login" }>Login</Link>
        </div>
        <div class='buyer'>
+       <h1>Buyer's Portal</h1>
+       <Link className="btn btn-primary" to={"/buyer/login" }>Login</Link>
+       <p> Don't have an account yet? Sign Up!</p>
        <Link to={"/buyer/signup" }>Signup</Link>
-       <Link to={"/buyer/login" }>Login</Link>
        </div>
     </div>
     )
