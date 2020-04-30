@@ -26,8 +26,8 @@ router.route('/signup').post((req, res) => {
 });
 
 router.route('/login').post((req, res) => {
-  Farmer.find()
-    .then(Farmer => res.json(Farmer))
+  Farmer.find({ "email": req.body.email,"password": req.body.password})
+    .then(Farmer => res.json(Farmer.length))
     .catch(err => res.status(400).json('Error: ' + err));
   });
 
