@@ -43,7 +43,15 @@ export default class Flogin extends Component {
       };
 
       axios.post('http://localhost:5000/farmer/login', form)
-      .then(res => console.log(res.data));
+      .then(res => {
+        if(res.data == '1'){
+          window.location = '/transaction'
+        }
+        else{
+          alert('Wrong Email or Password. Try Again!!')
+          window.location.reload(false); 
+        }
+      });
 
 
   }

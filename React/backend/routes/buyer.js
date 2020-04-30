@@ -25,8 +25,8 @@ router.route('/signup').post((req, res) => {
 });
 
 router.route('/login').post((req, res) => {
-  Buyer.find()
-    .then(Buyer => res.json(Buyer))
+  Buyer.find({ "email": req.body.email,"password": req.body.password})
+    .then(Buyer => res.json(Buyer.length))
     .catch(err => res.status(400).json('Error: ' + err));
   });
 
