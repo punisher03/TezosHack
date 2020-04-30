@@ -8,6 +8,7 @@ import Blogin from "./components/Blogin";
 import Bsignup from "./components/Bsignup";
 import Fsignup from "./components/Fsignup";
 import Flogin from "./components/Flogin";
+import Transaction from "./components/Transaction"
 
 
 export default class App extends Component{
@@ -22,6 +23,7 @@ export default class App extends Component{
           <Route path="/buyer/login" exact component={ Blogin }/>
           <Route path="/farmer/signup" exact component={ Fsignup }/>
           <Route path="/farmer/login" exact component={ Flogin }/>
+          <Route path="/transaction" exact component={ Transaction }/>
         </div>
       </Router>
     );
