@@ -28,11 +28,12 @@ Created a Escrow Smart Contact for the users to trust our applications (The Buye
 2) Install all the dependencies by opening a cmd/terminal and running the comand `npm install` (npm is required).
 3) After successful installation run `npm start` which will automatically open the application on your browser.
 # For the backend
-1) Go into the server folder which can be found inside the react folder
+1) Go into the backend folder which can be found inside the react folder
 2) Install all the dependencies by opening a cmd/terminal and running the comand `npm install` (npm is required).
 3) Paste your MongoDB Cloud atlas URI for node version 2.2 and above in the .env file present in that folder.
 4) Run `node server.js`
 
 ## Thank You for spending your time with our project
+* We developed individual html pages but couldn't combine all the pages into React Components at the last moment
 * We developed a the escrow smar contact but we ran into problems when trying to invoke it, So you can test the smart contact by going to `smartpy.io` and pasting our code which is present in the root folder
 * Our product is not yet complete You can try out the transaction feature by going to `http://localhost:3000/transaction` in  your browser after starting the react app.
