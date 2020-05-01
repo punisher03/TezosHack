@@ -7,7 +7,7 @@ There are approximately 450–500 million smallholder farmers, or those who work
 We made this possible by deploying our contract, and making use of the powerful Tezos chain and made use of an escrow contract to act as p2p between buyers and farmers and thus eliminating middlemen, in a way in which this app could be trusted by buyers. We also made use of the cryptocurrency Tez(XTZ) as our main payment method (We assume that all the Tez accounts are activated and revealed in the first place) instead of the traditional NetBanking method to save the farmers from the unavoidable exorbitant cuts which are often more than they can afford. Tezos Blockchain ensures transparency and justice for the farmers. We made use of the Cryptonomic Stack for our benefit by using conseilJS to communicate with the tezos blockchain for transferring Tez and checking out the status of the Transactions using the Arronax explorer.
 
 # Frontend:
-Conseiljs to connect between frontend and dapp
+Conseiljs to connect between frontend which was developed using ReactJS and dapp developed using SmartPy
 ##  Farmer:
 Farmers should login if they haven’t(Id would be their blockchain address from metamask or similar to this)
 They should also give their personal details like address ph no.
@@ -20,4 +20,19 @@ Buyers can explore the dapp and select the product they wish to buy and can tran
 # Backend:
 Have two tables for buyers and sellers with respective attributes.
 # Dapp:
-Created a function to transfer money from buyer to seller and incase an request to cancel, refund function should be invoked
+Created a Escrow Smart Contact for the users to trust our applications (The Buyer sends the money, the money gets stored in the verifier account and after the buyer notifies the verifier that the product has been delivered safely and successfully the sellers gets the money for that product they sold else the money goes back to the buyer).
+
+##Steps to run the project
+#For the client side
+1) Go into the react folder
+2) Install all the dependencies by opening a cmd/terminal and running the comand `npm install` (npm is required).
+3) After successful installation run `npm start` which will automatically open the application on your browser.
+#For the backend
+1) Go into the server folder which can be found inside the react folder
+2) Install all the dependencies by opening a cmd/terminal and running the comand `npm install` (npm is required).
+3) Paste your MongoDB Cloud atlas URI for node version 2.2 and above in the .env file present in that folder.
+4) Run `node server.js`
+
+##Thank You for spending your time with our project
+**We developed a the escrow smar contact but we ran into problems when trying to invoke it, So you can test the smart contact by going to `smartpy.io` and pasting our code which is present in the root folder**
+**Our product is not yet complete You can try out the transaction feature by going to `http://localhost:3000/transaction` in  your browser after starting the react app.**
