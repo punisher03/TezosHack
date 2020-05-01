@@ -33,6 +33,6 @@ Created a Escrow Smart Contact for the users to trust our applications (The Buye
 3) Paste your MongoDB Cloud atlas URI for node version 2.2 and above in the .env file present in that folder.
 4) Run `node server.js`
 
-##Thank You for spending your time with our project
+## Thank You for spending your time with our project
 **We developed a the escrow smar contact but we ran into problems when trying to invoke it, So you can test the smart contact by going to `smartpy.io` and pasting our code which is present in the root folder**
 **Our product is not yet complete You can try out the transaction feature by going to `http://localhost:3000/transaction` in  your browser after starting the react app.**
