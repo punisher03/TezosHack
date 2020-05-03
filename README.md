@@ -45,6 +45,8 @@ Created a Escrow Smart Contact for the users to trust our applications (The Buye
 
 # Thank You for spending your time with our project with regards The ₿oys
 **Note:**
+* Please go to our submission on devfolio for the video of the working demo of our app.
 * We developed individual html pages for other dashboards and features but couldn't combine all the pages into React Components at the last moment. But we believe that we have managed to complete the basic UI pages and have also implement the transaction which we believe is enough to convey our idea effectively.
 * We developed also a the escrow smart contact which we did not use in our dapp as we established an alternative payment mechanism. You can test the smart contact by going to `smartpy.io` and pasting our code which is present in the root folder
 * To simply test the transaction feature you can go to `http://localhost:3000/transaction` in  your browser after starting the react app.
+
