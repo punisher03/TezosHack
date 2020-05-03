@@ -45,7 +45,7 @@ export default class Blogin extends Component {
       axios.post('http://localhost:5000/buyer/login', form)
       .then(res => {
         if(res.data == '1'){
-          window.location = '/transaction'
+          window.location = '/buyer/dashboard'
         }
         else{
           alert('Wrong Email or Password. Try Again!!')
