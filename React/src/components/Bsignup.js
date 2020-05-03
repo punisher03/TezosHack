@@ -6,7 +6,6 @@ export default class Bsignup extends Component {
     super(props);
 
     this.onChangeName = this.onChangeName.bind(this);
-    this.onChangeId = this.onChangeId.bind(this);
     this.onChangeEmail = this.onChangeEmail.bind(this);
     this.onChangePno = this.onChangePno.bind(this);
     this.onChangePassword = this.onChangePassword.bind(this);
@@ -16,7 +15,6 @@ export default class Bsignup extends Component {
     this.state = {
       name:"",
       email:"",
-      id:"",
       password:"",
       pno:"",
       location:""
@@ -32,13 +30,6 @@ export default class Bsignup extends Component {
       )
   }
 
-  onChangeId(e){
-    this.setState(
-      {
-          id: e.target.value
-      }
-    )
-  }
   onChangePassword(e){
     this.setState(
       {
@@ -70,7 +61,6 @@ export default class Bsignup extends Component {
     event.preventDefault();
 
     const form = {
-        _id : this.state.id,
         name: this.state.name,
         password: this.state.password,
         pno: this.state.pno,
@@ -79,7 +69,11 @@ export default class Bsignup extends Component {
       };
 
       axios.post('http://localhost:5000/buyer/signup', form)
-      .then(res => console.log(res.data));
+      .then(res => {
+       if( res.data==='Buyer added!'){
+        window.location = '/buyer/login'
+       }
+      });
 
 
   }
@@ -88,15 +82,6 @@ export default class Bsignup extends Component {
     return (
     <div>
       <form onSubmit={this.onSubmit}>
-      <div className="form-group"> 
-        <label>Enter Your  Eth Address: </label>
-        <input  type="text"
-              required
-              className="form-control"
-              value={this.state.id}
-              onChange={this.onChangeId}
-              />
-        </div>
         <div className="form-group"> 
         <label>Enter Your  Name: </label>
         <input  type="text"
@@ -118,7 +103,7 @@ export default class Bsignup extends Component {
         <div className="form-group">
           <label>Enter Your Password: </label>
           <input 
-              type="text" 
+              type="password" 
               className="form-control"
               value={this.state.password}
               onChange={this.onChangePassword}

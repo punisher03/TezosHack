@@ -88,15 +88,6 @@ export default class Fsignup extends Component {
     return (
     <div>
       <form onSubmit={this.onSubmit}>
-      <div className="form-group"> 
-        <label>Enter Your  Eth Address: </label>
-        <input  type="text"
-              required
-              className="form-control"
-              value={this.state.id}
-              onChange={this.onChangeId}
-              />
-        </div>
         <div className="form-group"> 
         <label>Enter Your  Name: </label>
         <input  type="text"
@@ -118,7 +109,7 @@ export default class Fsignup extends Component {
         <div className="form-group">
           <label>Enter Your Password: </label>
           <input 
-              type="text" 
+              type="password" 
               className="form-control"
               value={this.state.password}
               onChange={this.onChangePassword}
