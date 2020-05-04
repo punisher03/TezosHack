@@ -27,15 +27,15 @@ export default class Home extends Component {
       </div>
       </List>
 
-    <div>
-    <div class='index'>
-       <div class='farmer'>
+    <div><br></br>
+    <div class='row'>
+       <div class='col-6'>
          <h4>Farmer's Portal</h4>
          <Link className="btn btn-primary" to={"/farmer/login" }>Login</Link>
          <p> Don't have an account yet? Sign Up!</p>
        <Link to={"/farmer/signup" }>Signup</Link>
        </div>
-       <div class='buyer'>
+       <div class='col-6'>
        <h4>Buyer's Portal</h4>
        <Link className="btn btn-primary" to={"/buyer/login" }>Login</Link>
        <p> Don't have an account yet? Sign Up!</p>
