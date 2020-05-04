@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { BrowserRouter as Router, Route} from 'react-router-dom';
 import "bootstrap/dist/css/bootstrap.min.css";
 
-import Home from "./components/Home"
+import Home from "./components/home"
 import App1 from "./components/SellerDashboard";
 import Blogin from "./components/Blogin";
 import Bsignup from "./components/Bsignup";

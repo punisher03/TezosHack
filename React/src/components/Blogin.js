@@ -73,7 +73,7 @@ export default class Blogin extends Component {
         <div className="form-group">
           <label>Enter Your Password: </label>
           <input 
-              type="text" 
+              type="password" 
               className="form-control"
               value={this.state.password}
               onChange={this.onChangePassword}
